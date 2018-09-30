@@ -6,3 +6,6 @@ class Estadistica:
         else:
             cadenaStr = cadena.split(",")
             return [len(cadenaStr)]
+
+    def menor(self, cadena):
+        pass
