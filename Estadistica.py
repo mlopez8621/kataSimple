@@ -38,3 +38,6 @@ class Estadistica:
                     mayor = ele
             cantEle = len(cadenaStr)
             return [cantEle, int(menor), int(mayor)]
+
+    def promedio(self,cadena):
+        return [0,0,0,0]
