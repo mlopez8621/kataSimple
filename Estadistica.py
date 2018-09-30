@@ -27,4 +27,14 @@ class Estadistica:
         elif len(cadena) == 1:
             return [1,1,1]
         else:
-            return [2,1,2]
+            cadenaStr = cadena.split(",")
+            menor = cadenaStr[0]
+            mayor = cadenaStr[0]
+            for ele in cadenaStr:
+                if ele < menor:
+                    menor = ele
+            for ele in cadenaStr:
+                if ele > mayor:
+                    mayor = ele
+            cantEle = len(cadenaStr)
+            return [cantEle, int(menor), int(mayor)]
