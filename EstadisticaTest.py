@@ -38,3 +38,6 @@ class EstadisticaTest(TestCase):
 
     def test_cantElementosNNum_Menor_Mayor(self):
         self.assertEqual(Estadistica().mayor("1,2,3,4,5,6,7"), [7, 1, 7], "N numeros, menor 1, mayor 7")
+
+    def test_cantElementosVacio_Menor_Mayor_Prome(self):
+        self.assertEqual(Estadistica().promedio(""), [0, 0, 0, 0], "Cadena vacia")
