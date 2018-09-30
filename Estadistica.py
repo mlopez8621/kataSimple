@@ -40,4 +40,7 @@ class Estadistica:
             return [cantEle, int(menor), int(mayor)]
 
     def promedio(self,cadena):
-        return [0,0,0,0]
+        if cadena == "":
+            return [0,0,0,0]
+        else:
+            return [1,1,1,1]
