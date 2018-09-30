@@ -41,3 +41,6 @@ class EstadisticaTest(TestCase):
 
     def test_cantElementosVacio_Menor_Mayor_Prome(self):
         self.assertEqual(Estadistica().promedio(""), [0, 0, 0, 0], "Cadena vacia")
+
+    def test_cantElementosUnNum_Menor_Mayor_Prome(self):
+        self.assertEqual(Estadistica().promedio("1"), [1, 1, 1, 1], "Cadena vacia")
