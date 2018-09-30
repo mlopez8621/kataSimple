@@ -35,3 +35,6 @@ class EstadisticaTest(TestCase):
 
     def test_cantElementosDosNum_Menor_Mayor(self):
         self.assertEqual(Estadistica().mayor("1,2"), [2, 1, 2], "Un Numero, menor uno, mayor uno")
+
+    def test_cantElementosNNum_Menor_Mayor(self):
+        self.assertEqual(Estadistica().mayor("1,2,3,4,5,6,7"), [7, 1, 7], "N numeros, menor 1, mayor 7")
