@@ -4,4 +4,5 @@ class Estadistica:
         if cadena == "":
             return [0]
         else:
-            return [1]
+            cadenaStr = cadena.split(",")
+            return [len(cadenaStr)]
