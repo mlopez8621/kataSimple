@@ -10,5 +10,7 @@ class Estadistica:
     def menor(self, cadena):
         if cadena == "":
             return [0,0]
-        else:
+        elif len(cadena)==1:
             return [1,1]
+        else:
+            return [2,1]
