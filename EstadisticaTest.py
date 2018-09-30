@@ -47,3 +47,6 @@ class EstadisticaTest(TestCase):
 
     def test_cantElementosDosNum_Menor_Mayor_Prome(self):
         self.assertEqual(Estadistica().promedio("1,2"), [2, 1, 2, 1.5], "Dos Numero, menor uno, mayor dos, promedio 1.5")
+
+    def test_cantElementosNNum_Menor_Mayor_Prome(self):
+        self.assertEqual(Estadistica().promedio("1,2,3,4,5,6,7"), [7, 1, 7, 4], "N Numeros, menor uno, mayor 7, promedio 4")
