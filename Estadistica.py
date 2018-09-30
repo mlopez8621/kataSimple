@@ -22,4 +22,7 @@ class Estadistica:
             return [cantEle,int(menor)]
 
     def mayor(self,cadena):
+        if cadena == "":
             return [0,0,0]
+        else:
+            return [1,1,1]
