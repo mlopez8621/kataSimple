@@ -15,5 +15,8 @@ class EstadisticaTest(TestCase):
     def test_cantElementosNNum(self):
         self.assertEqual(Estadistica().cantElementos("1,2,3,4,5,6,7"), [7], "N numeros")
 
-    def test_cantElementosNNum_Menor(self):
+    def test_cantElementosVacio_Menor(self):
         self.assertEqual(Estadistica().menor(""),[0,0],"N numeros-menor")
+
+    def test_cantElementosUnNum_Menor(self):
+        self.assertEqual(Estadistica().menor("1"), [1, 1], "Un numero, menor 1")
