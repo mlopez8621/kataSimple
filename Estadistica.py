@@ -22,4 +22,4 @@ class Estadistica:
             return [cantEle,int(menor)]
 
     def mayor(self,cadena):
-        pass
+            return [0,0,0]
