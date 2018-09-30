@@ -1,4 +1,4 @@
 
 class Estadistica:
-    def cantElementos(cadena):
-        pass
+    def cantElementos(self,cadena):
+        return [0]
