@@ -20,3 +20,6 @@ class Estadistica:
                     menor = ele
             cantEle =len(cadenaStr)
             return [cantEle,int(menor)]
+
+    def mayor(self,cadena):
+        pass
