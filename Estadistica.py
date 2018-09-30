@@ -8,4 +8,7 @@ class Estadistica:
             return [len(cadenaStr)]
 
     def menor(self, cadena):
-        return [0,0]
+        if cadena == "":
+            return [0,0]
+        else:
+            return [1,1]
